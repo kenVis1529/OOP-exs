@@ -1,5 +1,5 @@
 #include "Rectangle.cpp"
-
+template <typename T>
 int main(){
     Rectangle hcn[100];
     int n, tong;

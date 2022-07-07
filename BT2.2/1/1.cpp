@@ -24,11 +24,11 @@ int ucln(PHANSO ps){
         //if (negative == 0) negative = 1;
         ps.m = abs(ps.m);
     }
-    if ((ps.t == 0) or (ps.m == 0)) return 0;
+    if ((ps.t == 0) || (ps.m == 0)) return 0;
     if (ps.t == ps.m) return -1;
     if (ps.t == 1) return 1;
     if (ps.m == 1) return -1;
-    while ((ps.m != ps.t) and (ps.m != 0) and (ps.t != 0)) {
+    while ((ps.m != ps.t) && (ps.m != 0) && (ps.t != 0)) {
         if (ps.m > ps.t) ps.m %= ps.t;
         else ps.t %= ps.m;
     }
@@ -59,7 +59,7 @@ void xuat(PHANSO ps){
     else if (ps.m == 1){
         cout << ps.t;
     }
-    else if (ps.t < 0 and ps.m < 0){
+    else if (ps.t < 0 && ps.m < 0){
         cout << abs(ps.t) << "/" << abs(ps.m);
     }
     else if (ps.m < 0){

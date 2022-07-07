@@ -121,7 +121,7 @@ void InDanhSachNhanVien(int n, NHANVIEN kien[]){
 int main(){
     int sonhanvien, tongthuclanh;
     cin >> sonhanvien;
-    NHANVIEN kien[sonhanvien];
+    NHANVIEN kien[300];
     //Nhap
     nhap(sonhanvien, kien);
 
